@@ -1,0 +1,90 @@
+.container-wrapper{
+       width: 100%;
+       height: auto;
+       display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap:20px; 
+}
+.container-wrapper .box-music{
+        height: 320px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        position: relative;
+        cursor: pointer;
+}
+.box-music img{
+         width: 100%;
+         height: 250px;
+         object-fit: cover;
+         border-radius: 5px;
+}
+.box-music .btn-overlay{
+          width: 40%;
+          height: 50px;
+          display:flex;
+          position: absolute;
+          margin-top: -5rem;
+          right: -1rem;
+        
+}
+.btn-overlay .icon{
+          width: 40px;
+          height: 40px;
+          background-color: #fff;
+          margin: 5px;
+          border-radius: 50%;
+}
+.btn-overlay .icon ion-icon{
+           color: #000;
+           margin-left:11px;
+           margin-top: 10px;
+}
+.box-music .info{
+          width: 100%;
+          height: 70px;
+          flex-direction: column;
+}
+.box-music .info h5{
+          font-size: 16px;
+          color: #000;
+          font-weight: bold;
+          margin-left: 5px;
+          margin-top: 10px;
+}
+.box-music .info span{
+        margin-left: 5px;
+
+}
+.btn-overlay{
+        visibility: hidden;
+}
+.box-music:hover .btn-overlay{
+        visibility: visible;
+        animation: fade 0.5s;
+ 
+}
+@keyframes fade {
+        0%{
+                opacity: 0;
+        }
+        1%{
+                opacity: 1;
+        }
+}
+.box-music .btn-play{
+           width: 40px;
+           height: 40px;
+           background-color: #fff;
+           position: absolute;
+           margin-top: -9.7rem;
+           margin-left: 10px;
+           border-radius: 50%;
+}
+.box-music .btn-play ion-icon{
+          margin-left: 10px;
+          margin-top: 10px;
+          font-size: 20px;
+          color: #000;
+}

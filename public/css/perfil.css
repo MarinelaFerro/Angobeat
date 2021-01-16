@@ -1,0 +1,150 @@
+div.perfil-parent{
+   
+    padding: 10px 0;
+}
+div .perfil-parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1300px;
+   
+}
+div.perfil{
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   background-color: white;
+   display: flex;
+   padding: 40px 20px;
+   box-shadow:0 0 1rem rgba(0,0, 0, 0.1);
+ 
+ 
+  
+}
+div.perfil-img{
+      width: 40%;
+}
+
+
+div.perfil-form{
+    width: 60%;
+    padding-left: 20px;
+} 
+div.perfil-form label{
+    font-size: 14px;
+    color: #72777a;
+
+}
+div.perfil-form input,
+div.perfil-form select{
+   font-size: 14px;
+   color: #72777a;
+
+}
+div.perfil-form input .custom-file{
+   margin-top: 1rem;
+}
+div.perfil-form button{
+  
+   background: linear-gradient(123deg, #6e8efb,#a777e3);
+   color: #fff;
+     margin-left: 5px;
+}
+div.perfil-form button:hover{
+   color: #fff;
+   background: linear-gradient(123deg, #6e8efb,#a777e3);
+   
+
+}
+.perfil-img .img{
+   height: 380px;
+   width: 380px;
+   box-shadow:0 0 2rem rgba(0,0, 0, 0.5);                                            
+   border-radius: 5px;
+   background-image: url(../img/imagens/amor.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+.perfil-img .img .camera{
+       width: 60px;
+       height: 60px;
+       background-color:#fff;
+       margin-top: 10rem;
+       position: absolute;
+       margin-left: 9rem;
+       border-radius: 50%;
+
+}
+.camera ion-icon{
+    color: #000;
+    font-size: 30px;
+    margin-left: 15px;
+    margin-top: 14px;
+}
+
+@media screen and (max-width:1480px){
+ 
+  div.perfil{
+      flex-direction: column;
+      align-items: center;
+      justify-content:center;
+      width: 100%;
+      background-color: white;
+      display: flex;
+      padding: 40px 20px;
+      box-shadow:0 0 1rem rgba(0,0, 0, 0.1);
+      max-width: 100%; 
+  }
+
+  div.perfil-img{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+}
+div.img{
+   height:450px;
+   width:100%;
+   max-width: 400px;
+   background-position: top;
+}
+div.perfil-form{
+   width: 100%;
+   margin-top: 30px;
+   max-width: 200px;
+
+} 
+div.perfil-form button{
+   width: 100%;
+   margin-top: 10px;
+   
+}
+
+}
+@media screen and(max-width: 768px){
+   
+  div.perfil-img{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+
+}
+div.img{
+height:450px;
+width:100%;
+max-width: 400px;
+background-position: top;
+position: relative;
+}
+
+
+
+
+}

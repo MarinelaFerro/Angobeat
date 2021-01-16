@@ -1,0 +1,98 @@
+.content-wrapper{
+    width: 100%;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   grid-gap:20px; 
+   height: auto;
+   
+  
+  }
+  .content-wrapper .box{
+    height: 330px;
+    position: relative;
+    border-radius: 5px;
+    
+ }
+ .add-playlist{
+      border: 2px dashed  palevioletred!important;
+      align-items: center;
+      justify-content: center;
+ }
+ .add-playlist h6{
+      text-align: center;
+      display: block;
+      font-size: 20px;
+      margin-top: 10px;
+      color:#000;
+      font-weight: bold;
+ }
+ .box .add{
+        width: 55px;
+        height: 55px;
+        background-color:palevioletred;
+        margin-top: 8rem;
+        margin-left:7rem;
+        border-radius: 50%;
+ }
+ .box img{
+       width: 100%;
+       height: 330px;
+       object-fit: cover;
+       border-radius: 5px;
+ }
+ .box .btn-play{
+       width: 40px;
+       height: 40px;
+       background-color:#fff;
+       position: absolute;
+       margin-top: 16rem;
+       margin-left: 1rem;
+       border-radius: 50%;
+}
+.box .btn-play ion-icon{
+     color: #000;
+     margin-top: 11px;
+     margin-left: 13px;
+}
+ .box .add ion-icon{
+           font-size: 25px;
+           color:#fff;
+           margin-top: 16px;
+           margin-left: 15px;
+ }
+ .img-area-modal{
+         width: 200px;
+         height: 210px;
+         background-color:#ccc;
+         position: relative;
+         margin-left: auto;
+         margin-right: auto;  
+ }
+
+ .img-area-modal .camara{
+       width: 50px;
+       height: 50px;
+       background-color:#fff;
+        position: absolute;
+        margin-top: 5rem;
+        margin-left: 4.5rem;
+        border-radius: 50%;
+
+    }
+    .img-area-modal .camara ion-icon{
+                  color: #000;
+                  font-size: 25px;
+                  margin-top: 11px;
+                  margin-left: 12px;
+    }
+
+
+
+    @media screen and (max-width:400px){
+        .modal{
+            padding: 0px!important;
+       
+        
+    }
+   }
+    

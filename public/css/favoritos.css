@@ -1,0 +1,219 @@
+.wrapper-artista-favorito{
+    margin-top: 1rem;
+}
+.post-slider-favorito .post-favorit-music{
+    width: 100%;
+    height: 350px;
+    margin: 0px auto;
+    overflow: hidden;
+
+}
+.post-slider-favorito .post-favorit-music .post-music{   
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin: 0px 10px;
+    position: relative;
+    border-radius: 5px;
+}
+.post-slider-favorito .post-favorit-music .post-music img{
+      width: 100%;
+      height: 270px;
+      border-radius: 5px;
+      object-fit: cover;
+}
+.post-slider-favorito .post-favorit-music .post-music .info{
+           width: 100%;
+           height: 60px;
+         
+}
+.post-slider-favorito .post-favorit-music .post-music .info h6 a{
+     color: #000;
+     font-weight: bold;
+}
+.post-slider-favorito .post-favorit-music .post-music .info span{
+      display: block;
+      margin-top: -0.5rem;
+}
+.post-slider-favorito .post-favorit-music .post-music .btn-play{
+      width: 40px;
+      height: 40px;
+      background-color:#fff;
+      position: absolute;
+      margin-top: -7rem;
+      border-radius: 50%;
+     
+}
+.post-slider-favorito .post-favorit-music .post-music .btn-play ion-icon{
+      color: #000;
+      font-size: 20px;
+      margin-top: 10px;
+      margin-left: 10px;
+
+}
+/*artistas favoritos*/
+
+.slide-artista-favorito .post-favorit-artista{
+     width: 100%;
+     height: 370px;
+     margin: 0px auto;
+     overflow: hidden;
+     
+}
+.slide-artista-favorito .post-favorit-artista .post-artista{
+      width: 320px;
+      height: 330px;
+      display: inline-block;
+      margin: 0px 10px;
+      position: relative;
+}
+.slide-artista-favorito .post-favorit-artista .post-artista .img-area{
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+
+}
+.slide-artista-favorito .post-favorit-artista .post-artista .img-area img{
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 50%;
+}
+.slide-artista-favorito .post-favorit-artista .post-artista .info-art{
+      width: 100%;
+      height: 70px;
+      align-items: center;
+      justify-content: center;
+}
+.slide-artista-favorito .post-favorit-artista .post-artista .info-art h6 a{
+         text-align: center;
+         display: block;
+         color: #000;
+         font-weight: bold;
+}
+.slide-artista-favorito .post-favorit-artista .post-artista .info-art span{
+       display: block;
+        text-align: center;
+}
+.slide-artista-favorito .post-favorit-artista .post-artista .btn-play{
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      position: absolute;
+      margin-top: -9rem;
+      margin-left: 7.5rem;
+      border-radius: 50%;
+}
+.slide-artista-favorito .post-favorit-artista .post-artista .btn-play ion-icon{
+     color: #000;
+     font-size: 20px;
+     margin-top: 10px;
+     margin-left: 10px;
+}
+
+
+/*fim artistas*/
+
+/*parte dos albuns*/
+.slide-albums{
+ 
+
+}
+.slide-albums .post-slider-album{
+      width: 100%;
+      height: 350px;
+      margin: 0px auto;
+      overflow: hidden;
+      position: relative;
+}
+.slide-albums .post-slider-album .post-album{
+      width: 300px;
+      height: 300px;
+      margin: 0px 10px;
+      display: inline-block;
+      border-radius: 5px;
+      cursor: pointer;
+}
+.slide-albums .post-slider-album .post-album img{
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 5px;
+}
+.slide-albums .post-slider-album .post-album .info{
+       width: 100%;
+       height: 50px;
+      
+}
+.slide-albums .post-slider-album .post-album .info h6 a{
+     color: #000;
+     font-weight: bold;
+}
+.slide-albums .post-slider-album .post-album .info span{
+    margin-top: -5px;
+    display: block;
+    margin-left: 3px;
+}
+.slide-albums .post-slider-album .post-album .btn-play{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    position: absolute;    
+    margin-top: -7rem; 
+    margin-left: 10px;
+    border-radius: 50%;
+}
+.slide-albums .post-slider-album .post-album .btn-play ion-icon{
+      color: #000;
+      margin-top:12px;
+      margin-left: 12px;
+}
+
+/*parte da playlist*/
+.slide-poster{
+      width: 100%;
+      height: 350px;
+      margin: 0px auto;
+      overflow: hidden;
+} 
+.slide-poster .post{
+       width: 300px;
+       height: 300px;
+       display: inline-block;
+       margin: 0px 10px;
+       border-radius: 5px;
+       position: relative;
+}
+.slide-poster .post img{
+      width: 100%;
+      height: 250px;
+      border-radius: 5px;
+      object-fit: cover;
+}
+.slide-poster .post .info{
+      width: 100%;
+      height: 50px;
+}
+.slide-poster .post .info h6 a{
+    color: #000;
+    font-weight: bold;
+    margin-left: 4px;
+}.slide-poster .post .info  span{
+      display: block;
+      margin-top: -4px;
+      margin-left: 4px;
+}
+.slide-poster .post .btn-play{
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      margin-top: -7rem;
+      position: absolute;
+      margin-left: 10px;
+      border-radius: 50%;
+}
+.slide-poster .post .btn-play ion-icon{
+      color: #000;
+      margin-top: 12px;
+      margin-left: 12px;
+}
