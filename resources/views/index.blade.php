@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <div class="main-panel">
             <div class="content-wrapper">
-                <div class="row">
+                {{-- <div class="row">
                     <div class="col-12 grid-margin stretch-card">
                         <div class="card corona-gradient-card">
                             <div class="card-body py-0 px-0 px-sm-3">
@@ -30,7 +30,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
                 <div class="d-sm-flex align-items-center justify-content-between">
                     <h3 class="h3 mb-0 text-gray-800 " style="margin-top: 40px;">O que temos para você hoje
@@ -907,20 +907,5 @@
             </div>
             <!-- End of Main Content -->
 
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Direitos reservados &copy; Angobeat 2021</span>
-                    </div>
-                </div>
-            </footer>
-            <!-- End of Footer -->
-
-        </div>
-        <!-- End of Content Wrapper -->
-
-    </div>
-    <!-- End of Page Wrapper -->
-
+           
 @endsection

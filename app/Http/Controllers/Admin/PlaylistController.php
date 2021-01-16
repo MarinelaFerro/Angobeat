@@ -3,10 +3,10 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Categoria;
+use App\Models\Playlist;
 use Illuminate\Http\Request;
 
-class CategoriaController extends Controller
+class PlaylistController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,10 +16,9 @@ class CategoriaController extends Controller
     public function index()
     {
         //
-        $response['categorias'] = Categoria::orderby('vc_nome', 'asc')->get();
-        $response['n'] = 1;
-        $response['titulo'] = "Categorias";
-        return view('utilizador.categorias.site.index', $response);
+        $response['playlists'] = Playlist::orderby('vc_nome', 'asc')->get();
+        $response['titulo'] = "Playlists";
+        return view('utilizador.playlists.site.index', $response);
     }
 
     /**

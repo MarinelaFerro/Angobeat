@@ -3,10 +3,10 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Categoria;
+use App\Models\Album;
 use Illuminate\Http\Request;
 
-class CategoriaController extends Controller
+class AlbumController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,10 +16,9 @@ class CategoriaController extends Controller
     public function index()
     {
         //
-        $response['categorias'] = Categoria::orderby('vc_nome', 'asc')->get();
-        $response['n'] = 1;
-        $response['titulo'] = "Categorias";
-        return view('utilizador.categorias.site.index', $response);
+        $response['albuns'] = Album::orderby('vc_nome', 'asc')->get();
+        $response['titulo'] = "Albuns";
+        return view('utilizador.albuns.site.index', $response);
     }
 
     /**
