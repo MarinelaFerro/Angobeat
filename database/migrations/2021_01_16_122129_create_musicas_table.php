@@ -18,6 +18,7 @@ class CreateMusicasTable extends Migration
             $table->string('vc_titulo', 255);
             $table->string('vc_descricao', 255);
             $table->string('vc_imagem', 255);
+            $table->string('vc_url', 255);
             $table->time('tm_duracao', $precision = 0);
             $table->timestamps();
         });

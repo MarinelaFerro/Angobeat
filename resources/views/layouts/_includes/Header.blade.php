@@ -20,10 +20,12 @@
 
     <!-- Custom styles for this template-->
     <link href="/css/sb-admin-2.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/musica.css">
+    {{-- <link rel="stylesheet" href="/css/musica.css">
     <link rel="stylesheet" href="/css/album.css">
-     <link rel="stylesheet" href="/css/categoria.css">
-    {{-- <link rel="stylesheet" href="css/playlist.css"> --}}
+    <link rel="stylesheet" href="/css/categoria.css">
+    <link rel="stylesheet" href="/css/artista.css"> --}}
+    {{--
+    <link rel="stylesheet" href="css/playlist.css"> --}}
 </head>
 
 <body id="page-top">

@@ -17,7 +17,7 @@ class AlbumController extends Controller
     {
         //
         $response['albuns'] = Album::orderby('vc_nome', 'asc')->get();
-        $response['titulo'] = "Albuns";
+        $response['titulo'] = "Álbuns";
         return view('utilizador.albuns.site.index', $response);
     }
 
