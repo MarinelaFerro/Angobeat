@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
 
@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Color Utilities</title>
+  <title>SB Admin 2 - Dashboard</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -17,7 +17,7 @@
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="css/album.css">
 </head>
 
 <body id="page-top">
@@ -40,93 +40,64 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
 
-      <!-- Divider -->
-      <hr class="sidebar-divider">
 
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Interface
-      </div>
-
-      <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-          <i class="fas fa-fw fa-cog"></i>
-          <span>Components</span>
-        </a>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Custom Components:</h6>
-            <a class="collapse-item" href="buttons.html">Buttons</a>
-            <a class="collapse-item" href="cards.html">Cards</a>
-          </div>
-        </div>
-      </li>
-
-      <!-- Nav Item - Utilities Collapse Menu -->
-      <li class="nav-item active">
-        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-          <i class="fas fa-fw fa-wrench"></i>
-          <span>Utilities</span>
-        </a>
-        <div id="collapseUtilities" class="collapse show" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Custom Utilities:</h6>
-            <a class="collapse-item active" href="utilities-color.html">Colors</a>
-            <a class="collapse-item" href="utilities-border.html">Borders</a>
-            <a class="collapse-item" href="utilities-animation.html">Animations</a>
-            <a class="collapse-item" href="utilities-other.html">Other</a>
-          </div>
-        </div>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Addons
-      </div>
-
-      <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Pages</span>
-        </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Login Screens:</h6>
-            <a class="collapse-item" href="login.html">Login</a>
-            <a class="collapse-item" href="register.html">Register</a>
-            <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-            <div class="collapse-divider"></div>
-            <h6 class="collapse-header">Other Pages:</h6>
-            <a class="collapse-item" href="404.html">404 Page</a>
-            <a class="collapse-item" href="blank.html">Blank Page</a>
-          </div>
-        </div>
-      </li>
 
       <!-- Nav Item - Charts -->
       <li class="nav-item">
-        <a class="nav-link" href="charts.html">
-          <i class="fas fa-fw fa-chart-area"></i>
+        <a class="nav-link" href="artista.html">
+          <ion-icon name="mic-outline" style="color: blueviolet;"></ion-icon>
+          <span>Artista</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="album.html">
+          <ion-icon name="disc-outline" style="color: crimson;"></ion-icon>
+          <span>Album</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="musica.html">
+          <ion-icon name="musical-note-outline" style="color: darkmagenta;"></ion-icon>
+          <span>Música</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="favoritos.html">
+          <ion-icon name="heart-outline" style="color: palevioletred;"></ion-icon>
+          <span>Favorito</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="playlist.html">
+          <ion-icon name="musical-note-outline" style="color: greenyellow;"></ion-icon>
+          <span>Playlist</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="categoria.html">
+          <ion-icon name="heart-half-outline" style="color: seagreen;"></ion-icon>
+          <span>Categoria</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="usuario.html">
+          <ion-icon name="person-outline"></ion-icon>
+          <span>Usuario</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="charts.html">   
+          <ion-icon name="stats-chart-outline"  style="color: yellow;"></ion-icon>
           <span>Charts</span></a>
       </li>
 
       <!-- Nav Item - Tables -->
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="tables.html">
           <i class="fas fa-fw fa-table"></i>
           <span>Tables</span></a>
-      </li>
+      </li> -->
 
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
@@ -298,27 +269,24 @@
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
-                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Marinela Ferro</span>
+                <img class="img-profile rounded-circle" src="/img/imagens/Orlando.jpg">
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="perfil.html">
                   <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Profile
+                  Perfil
                 </a>
                 <a class="dropdown-item" href="#">
                   <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Settings
+                  Configurações
                 </a>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Activity Log
-                </a>
+               
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                   <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Logout
+                  Terminar sessão
                 </a>
               </div>
             </li>
@@ -331,94 +299,169 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-          <!-- Page Heading -->
-          <h1 class="h3 mb-1 text-gray-800">Color Utilities</h1>
-          <p class="mb-4">Bootstrap's default utility classes can be found on the official <a href="https://getbootstrap.com/docs">Bootstrap Documentation</a> page. The custom utilities below were created to extend this theme past the default utility classes built into Bootstrap's framework.</p>
-
-          <!-- Content Row -->
-          <div class="row">
-
-            <!-- First Column -->
-            <div class="col-lg-4">
-
-              <!-- Custom Text Color Utilities -->
-              <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Custom Text Color Utilities</h6>
-                </div>
-                <div class="card-body">
-                  <p class="text-gray-100 p-3 bg-dark m-0">.text-gray-100</p>
-                  <p class="text-gray-200 p-3 bg-dark m-0">.text-gray-200</p>
-                  <p class="text-gray-300 p-3 bg-dark m-0">.text-gray-300</p>
-                  <p class="text-gray-400 p-3 bg-dark m-0">.text-gray-400</p>
-                  <p class="text-gray-500 p-3 m-0">.text-gray-500</p>
-                  <p class="text-gray-600 p-3 m-0">.text-gray-600</p>
-                  <p class="text-gray-700 p-3 m-0">.text-gray-700</p>
-                  <p class="text-gray-800 p-3 m-0">.text-gray-800</p>
-                  <p class="text-gray-900 p-3 m-0">.text-gray-900</p>
-                </div>
-              </div>
-
-              <!-- Custom Font Size Utilities -->
-              <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Custom Font Size Utilities</h6>
-                </div>
-                <div class="card-body">
-                  <p class="text-xs">.text-xs</p>
-                  <p class="text-lg mb-0">.text-lg</p>
-                </div>
-              </div>
-
-            </div>
-
-            <!-- Second Column -->
-            <div class="col-lg-4">
-
-              <!-- Background Gradient Utilities -->
-              <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Custom Background Gradient Utilities</h6>
-                </div>
-                <div class="card-body">
-                  <div class="px-3 py-5 bg-gradient-primary text-white">.bg-gradient-primary</div>
-                  <div class="px-3 py-5 bg-gradient-secondary text-white">.bg-gradient-secondary</div>
-                  <div class="px-3 py-5 bg-gradient-success text-white">.bg-gradient-success</div>
-                  <div class="px-3 py-5 bg-gradient-info text-white">.bg-gradient-info</div>
-                  <div class="px-3 py-5 bg-gradient-warning text-white">.bg-gradient-warning</div>
-                  <div class="px-3 py-5 bg-gradient-danger text-white">.bg-gradient-danger</div>
-                  <div class="px-3 py-5 bg-gradient-light text-white">.bg-gradient-light</div>
-                  <div class="px-3 py-5 bg-gradient-dark text-white">.bg-gradient-dark</div>
-                </div>
-              </div>
-
-            </div>
-
-            <!-- Third Column -->
-            <div class="col-lg-4">
-
-              <!-- Grayscale Utilities -->
-              <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Custom Grayscale Background Utilities</h6>
-                </div>
-                <div class="card-body">
-                  <div class="p-3 bg-gray-100">.bg-gray-100</div>
-                  <div class="p-3 bg-gray-200">.bg-gray-200</div>
-                  <div class="p-3 bg-gray-300">.bg-gray-300</div>
-                  <div class="p-3 bg-gray-400">.bg-gray-400</div>
-                  <div class="p-3 bg-gray-500 text-white">.bg-gray-500</div>
-                  <div class="p-3 bg-gray-600 text-white">.bg-gray-600</div>
-                  <div class="p-3 bg-gray-700 text-white">.bg-gray-700</div>
-                  <div class="p-3 bg-gray-800 text-white">.bg-gray-800</div>
-                  <div class="p-3 bg-gray-900 text-white">.bg-gray-900</div>
-                </div>
-              </div>
-            </div>
+          <!-- header -->
+          
+          <div class="d-sm-flex align-items-center justify-content-end mb-4 ">
+            <button type="button" class="btn btn-primary btn-sm" style="margin: 5px;" onclick="window.location.href ='formalbum.html'" >Adicionar album</button>
+            <button type="button" class="btn btn-secondary btn-sm" onclick="window.location.href ='tableAlbum.html'" >Listar albuns</button>
+          </div>
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Albuns</h1>
+            <nav class="navbar navbar-light bg-light">
+              <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar..." aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+              </form>
+            </nav>
+          </div>
+          <!---area dos albuns-->
+          <div class="shadow-lg p-3 mb-5 bg-white rounded container-wrapper">
+              <div class="box-album">
+                  <img src="/img/imagens/artist-img-3.jpg" class="img-album">
+                  <div class="overlay-btn">
+                      <a href=""><ion-icon name="heart-outline"></ion-icon></a>
+                  </div>
+                  <div class="btn-play">
+                      <a href=""><ion-icon name="caret-forward-outline"></ion-icon></a>
+                  </div>
+                  <div class="info-album">
+                      <h6><a href="">Cúpido</a></h6>
+                      <span>por Marinela Ferro</span>
+                  </div>
+                  
+                 </div>
+                 <!-----post 2-->
+                 <div class="box-album">
+                    <img src="/img/imagens/artist-img-4.jpg" class="img-album">
+                    <div class="overlay-btn">
+                        <a href=""><ion-icon name="heart-outline"></ion-icon></a>
+                    </div>
+                    <div class="btn-play">
+                        <a href=""><ion-icon name="caret-forward-outline"></ion-icon></a>
+                    </div>
+                    <div class="info-album">
+                        <h6><a href="">Cúpido</a></h6>
+                        <span>por Marinela Ferro</span>
+                    </div>
+                    
+                   </div>
+                   <!---post 3-->
+                   <div class="box-album">
+                    <img src="/img/imagens/artist-img-5.jpg" class="img-album">
+                    <div class="overlay-btn">
+                        <a href=""><ion-icon name="heart-outline"></ion-icon></a>
+                    </div>
+                    <div class="btn-play">
+                        <a href=""><ion-icon name="caret-forward-outline"></ion-icon></a>
+                    </div>
+                    <div class="info-album">
+                        <h6><a href="">Cúpido</a></h6>
+                        <span>por Marinela Ferro</span>
+                    </div>
+                    
+                   </div>
+                   <!----post 4-->
+                   <div class="box-album">
+                    <img src="/img/imagens/artist-img-3.jpg" class="img-album">
+                    <div class="overlay-btn">
+                        <a href=""><ion-icon name="heart-outline"></ion-icon></a>
+                    </div>
+                    <div class="btn-play">
+                        <a href=""><ion-icon name="caret-forward-outline"></ion-icon></a>
+                    </div>
+                    <div class="info-album">
+                        <h6><a href="">Cúpido</a></h6>
+                        <span>por Marinela Ferro</span>
+                    </div>
+                    
+                   </div>
+                   <!---post 5-->
+                   <div class="box-album">
+                    <img src="/img/imagens/artist-img-3.jpg" class="img-album">
+                    <div class="overlay-btn">
+                        <a href=""><ion-icon name="heart-outline"></ion-icon></a>
+                    </div>
+                    <div class="btn-play">
+                        <a href=""><ion-icon name="caret-forward-outline"></ion-icon></a>
+                    </div>
+                    <div class="info-album">
+                        <h6><a href="">Cúpido</a></h6>
+                        <span>por Marinela Ferro</span>
+                    </div>
+                    
+                   </div>
+                   <!---post 6-->
+                   <div class="box-album">
+                    <img src="/img/imagens/artist-img-3.jpg" class="img-album">
+                    <div class="overlay-btn">
+                        <a href=""><ion-icon name="heart-outline"></ion-icon></a>
+                    </div>
+                    <div class="btn-play">
+                        <a href=""><ion-icon name="caret-forward-outline"></ion-icon></a>
+                    </div>
+                    <div class="info-album">
+                        <h6><a href="">Cúpido</a></h6>
+                        <span>por Marinela Ferro</span>
+                    </div>
+                    
+                   </div>
+                   <!---post 7-->
+                   <div class="box-album">
+                    <img src="/img/imagens/artist-img-3.jpg" class="img-album">
+                    <div class="overlay-btn">
+                        <a href=""><ion-icon name="heart-outline"></ion-icon></a>
+                    </div>
+                    <div class="btn-play">
+                        <a href=""><ion-icon name="caret-forward-outline"></ion-icon></a>
+                    </div>
+                    <div class="info-album">
+                        <h6><a href="">Cúpido</a></h6>
+                        <span>por Marinela Ferro</span>
+                    </div>
+                    
+                   </div>
+                   <!--post 8-->
+                   <div class="box-album">
+                    <img src="/img/imagens/artist-img-3.jpg" class="img-album">
+                    <div class="overlay-btn">
+                        <a href=""><ion-icon name="heart-outline"></ion-icon></a>
+                    </div>
+                    <div class="btn-play">
+                        <a href=""><ion-icon name="caret-forward-outline"></ion-icon></a>
+                    </div>
+                    <div class="info-album">
+                        <h6><a href="">Cúpido</a></h6>
+                        <span>por Marinela Ferro</span>
+                    </div>
+                    
+                   </div>
+       
+                   
+              
+            
 
           </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        
         </div>
+
         <!-- /.container-fluid -->
 
       </div>
@@ -428,7 +471,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2020</span>
+            <span>Direitos reservados &copy; Angobeat 2020</span>
           </div>
         </div>
       </footer>
@@ -463,16 +506,38 @@
       </div>
     </div>
   </div>
+  <!----modal de cadastro de artista pendente --> 
+ 
+
 
   <!-- Bootstrap core JavaScript-->
-  <script src="vendor/jquery/jquery.min.js"></script>
+
+  				
+
+   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Core plugin JavaScript-->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
   <!-- Custom scripts for all pages-->
+
   <script src="js/sb-admin-2.min.js"></script>
+
+
+  <!-- Page level plugins -->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+ 
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-pie-demo.js"></script>
+
+
 
 </body>
 

@@ -16,6 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
-Route::get('/album', function () {
-    return view('Artistatables');
-});
+// Route::get('/album', function () {
+//     return view('m');
+// });
