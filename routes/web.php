@@ -12,10 +12,20 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+/* Index do sistema */
+Route::get('/', ['as' => 'raiz', 'uses' => 'Admin\HomeController@index']);
 
-Route::get('/', function () {
-    return view('index');
-});
-// Route::get('/album', function () {
-//     return view('m');
-// });
+/* Categorias */
+Route::get('/categoria', ['as' => 'categoria.ver', 'uses' => 'Admin\UserController@index']);
+
+
+
+
+Route::get('/musicas', ['as' => 'musicas.ver', 'uses' => 'Admin\UserController@index']);
+Route::get('/albuns', ['as' => 'albuns.ver', 'uses' => 'Admin\UserController@index']);
+Route::get('/favoritos', ['as' => 'favoritos.ver', 'uses' => 'Admin\UserController@index']);
+Route::get('/playlists', ['as' => 'playlists.ver', 'uses' => 'Admin\UserController@index']);
+Route::get('/artistas', ['as' => 'artistas.ver', 'uses' => 'Admin\UserController@index']);
+
+
+

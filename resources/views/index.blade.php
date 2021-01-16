@@ -245,7 +245,7 @@
 
 
                 <div class="d-sm-flex align-items-center justify-content-between
-                    mb-6">
+                                    mb-6">
                     <h3 class="h3 mb-0 text-gray-800">Categorias</h3>
                 </div>
                 <div class="categoria-wrapper">
@@ -253,24 +253,23 @@
                         <ion-icon name="chevron-back-outline" class="cat-prev icon"></ion-icon>
                         <ion-icon name="chevron-forward-outline" class="cat-next icon"></ion-icon>
                         <div class="cate-slide">
-                            <div class="slide-cate card1">
-                                <h3>Kizomba</h3>
-                            </div>
-                            <div class="slide-cate card2">
-                                <h3>Kuduro</h3>
-                            </div>
-                            <div class="slide-cate card3">
-                                <h3>Slow</h3>
-                            </div>
-                            <div class="slide-cate card4">
-                                <h3>R&B</h3>
-                            </div>
-                            <div class="slide-cate card5">
-                                <h3>JAZZ</h3>
-                            </div>
+
+                            @foreach ($categorias as $categoria)
+
+                                <div class="slide-cate card{{ $n++ }}">
+                                    <a href="">
+                                        <h3>{{ $categoria->vc_nome }}</h3>
+                                    </a>
+                                </div>
+
+                            @endforeach
+
                             <div class="slide-cate card6">
-                                <h3>Semba</h3>
+                                <a href="">
+                                    <h3>Todas</h3>
+                                </a>
                             </div>
+
 
                         </div>
                     </div>
@@ -282,7 +281,7 @@
 
                 <!---slide dos albuns-->
                 <div class="d-sm-flex align-items-center justify-content-between
-                    mb-4">
+                                    mb-4">
                     <h3 class="h3 mb-0 text-gray-800">Nossos albuns</h3>
                 </div>
                 <div class="content-album">
@@ -398,7 +397,7 @@
 
                     <!---artistas-->
                     <div class="d-sm-flex align-items-center justify-content-between
-                   mb-3">
+                                   mb-3">
                         <h3 class="h3 mb-0 text-gray-800">Seus artistas favoritos</h3>
                     </div>
                     <div class="wrapper-artista">
@@ -533,7 +532,7 @@
 
                     <!---musicas em alta-->
                     <div class="d-sm-flex align-items-center justify-content-between
-                   mb-4">
+                                   mb-4">
                         <h3 class="h3 mb-0 text-gray-800">Músicas em alta </h3>
                     </div>
 
@@ -743,7 +742,7 @@
                     <!---playlists-->
 
                     <div class="d-sm-flex align-items-center justify-content-between
-                   mb-3">
+                                   mb-3">
                         <h3 class="h3 mb-0 text-gray-800">Playlist compartilhadas</h3>
                     </div>
                     <div class="playlist-page">
