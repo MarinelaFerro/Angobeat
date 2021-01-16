@@ -18,6 +18,7 @@ class CreateArtistasTable extends Migration
             $table->string('vc_nome', 255);
             $table->string('vc_descricao', 255);
             $table->string('vc_produtora', 255);
+            $table->string('vc_imagem', 255);
             $table->timestamps();
         });
     }

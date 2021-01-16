@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 /* Raíz principal */
+
 Route::get('/', ['as' => 'raiz', 'uses' => 'Admin\HomeController@index']);
+
 
 /* categorias */
 Route::get('/categorias/todas', ['as' => 'categoria.todas', 'uses' => 'Admin\CategoriaController@index']);
@@ -28,5 +30,7 @@ Route::get('/playlists/todas', ['as' => 'playlist.todas', 'uses' => 'Admin\Playl
 /* artistas */
 Route::get('/artistas/todas', ['as' => 'artista.todas', 'uses' => 'Admin\ArtistaController@index']);
 
-
-
+/*Credências */
+Route::get('/login', ['as' => 'auth.login', 'uses' => 'Auth\LoginController@index']);
+Route::get('/register', ['as' => 'auth.register', 'uses' => 'Auth\RegisterController@index']);
+Route::get('/forgotPassword', ['as' => 'auth.forgotPassword', 'uses' => 'Auth\ForgotPasswordController@index']);

@@ -33,7 +33,7 @@
                 </div> --}}
 
                 <div class="d-sm-flex align-items-center justify-content-between">
-                    <h3 class="h3 mb-0 text-gray-800 mt-3">O que temos para você hoje
+                    <h3 class="mb-0 text-gray-800 mt-3">O que temos para você hoje
                     </h3>
                 </div>
 
@@ -80,7 +80,7 @@
 
 
                 <div class="d-sm-flex align-items-center justify-content-between">
-                    <h3 class="h3 mb-0 text-gray-800 mb-3">Categorias</h3>
+                    <h3 class="mb-0 text-gray-800 mb-3">Categorias</h3>
                 </div>
                 <div class="categoria-wrapper">
                     <div class="shadow-lg p-3 mb-5 bg-white rounded categoria-slider">
@@ -115,7 +115,7 @@
 
                 <!--- albuns-->
                 <div class="d-sm-flex align-items-center justify-content-between">
-                    <h3 class="h3 mb-0 text-gray-800 mb-3">Nossos Álbuns</h3>
+                    <h3 class="mb-0 text-gray-800 mb-3">Nossos Álbuns</h3>
                 </div>
                 <!--inicio slide album-->
                 <div class="content-album">
@@ -156,7 +156,7 @@
 
                 <!---artistas-->
                 <div class="d-sm-flex align-items-center justify-content-between">
-                    <h3 class="h3 mb-0 text-gray-800 mb-3">Seus artistas favoritos</h3>
+                    <h3 class="mb-0 text-gray-800 mb-3">Seus artistas favoritos</h3>
                 </div>
                 <div class="wrapper-artista">
                     <div class="shadow-lg p-3 mb-5 bg-white rounded slider-artist">
@@ -198,7 +198,7 @@
 
                 <!---musicas em alta-->
                 <div class="d-sm-flex align-items-center justify-content-between">
-                    <h3 class="h3 mb-0 text-gray-800 mb-3">Músicas em alta</h3>
+                    <h3 class="mb-0 text-gray-800 mb-3">Músicas em alta</h3>
                 </div>
 
                 <div class="content-alt">
@@ -249,7 +249,7 @@
 
                 <!---playlists-->
                 <div class="d-sm-flex align-items-center justify-content-between">
-                    <h3 class="h3 mb-0 text-gray-800 mb-3">Playlist compartilhadas</h3>
+                    <h3 class=" mb-0 text-gray-800 mb-3">Playlist compartilhadas</h3>
                 </div>
                 <div class="playlist-page">
                     <div class="shadow-lg p-3 mb-5 bg-white rounded post-playlist">
