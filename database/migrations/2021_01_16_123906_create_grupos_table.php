@@ -15,8 +15,8 @@ class CreateGruposTable extends Migration
     {
         Schema::create('grupos', function (Blueprint $table) {
             $table->id();
-            $table->string('vc_nome', 100);
-            $table->string('vc_descricao', 255);
+            $table->string('vc_nome_grupo', 100);
+            $table->string('vc_descricao_grupo', 255);
             $table->timestamps();
         });
     }

@@ -3,7 +3,7 @@
 
      <!-- Sidebar - Brand -->
      <a class="sidebar-brand d-flex align-items-center
-            justify-content-center" href="{{route('raiz')}}">
+            justify-content-center" href="{{ url('/') }}">
          <div class="sidebar-brand-icon rotate-n-15">
              <i class="fas fa-microphone-alt"></i>
          </div>
@@ -13,64 +13,103 @@
      <!-- Divider -->
      <hr class="sidebar-divider my-0">
 
-     
-
-
      <!-- Nav Item - Charts -->
      <li class="nav-item">
-         <a class="nav-link" href="{{route('artista.todas')}}">
+         <a class="nav-link" href="{{ route('artista.todas') }}">
              <ion-icon name="mic-outline" style="color: blueviolet;"></ion-icon>
              <span>Artista</span>
          </a>
      </li>
      <li class="nav-item">
-         <a class="nav-link" href="{{route('album.todas')}}">
+         <a class="nav-link" href="{{ route('album.todas') }}">
              <ion-icon name="disc-outline" style="color: crimson;"></ion-icon>
              <span>Album</span>
          </a>
      </li>
      <li class="nav-item">
-         <a class="nav-link" href="{{route('musica.todas')}}">
+         <a class="nav-link" href="{{ route('musica.todas') }}">
              <ion-icon name="musical-note-outline" style="color: darkmagenta;"></ion-icon>
              <span>Música</span>
          </a>
      </li>
 
      <li class="nav-item">
-         <a class="nav-link" href="{{route('favorito.todas')}}">
+         <a class="nav-link" href="{{ route('favorito.todas') }}">
              <ion-icon name="heart-outline" style="color: palevioletred;"></ion-icon>
              <span>Favorito</span>
          </a>
      </li>
 
      <li class="nav-item">
-         <a class="nav-link" href="{{route('playlist.todas')}}">
+         <a class="nav-link" href="{{ route('playlist.todas') }}">
              <ion-icon name="musical-note-outline" style="color: greenyellow;"></ion-icon>
              <span>Playlist</span>
          </a>
      </li>
      <li class="nav-item">
-         <a class="nav-link" href="{{route('categoria.todas')}}">
+         <a class="nav-link" href="{{ route('categoria.todas') }}">
+             <ion-icon name="heart-half-outline" style="color: seagreen;"></ion-icon>
+             <span>Categoria</span>
+         </a>
+     </li>
+
+     <!-- Divider -->
+     <hr class="sidebar-divider d-none d-md-block">
+     <!-- Administrador -->
+     <!-- Nav Item - Charts -->
+     <li class="nav-item">
+         <a class="nav-link" href="{{ route('artista.listar') }}">
+             <ion-icon name="mic-outline" style="color: blueviolet;"></ion-icon>
+             <span>Artista</span>
+         </a>
+     </li>
+     <li class="nav-item">
+         <a class="nav-link" href="{{ route('album.listar') }}">
+             <ion-icon name="disc-outline" style="color: crimson;"></ion-icon>
+             <span>Album</span>
+         </a>
+     </li>
+     <li class="nav-item">
+         <a class="nav-link" href="{{ route('musica.listar') }}">
+             <ion-icon name="musical-note-outline" style="color: darkmagenta;"></ion-icon>
+             <span>Música</span>
+         </a>
+     </li>
+
+     <li class="nav-item">
+         <a class="nav-link" href="{{ route('favorito.listar') }}">
+             <ion-icon name="heart-outline" style="color: palevioletred;"></ion-icon>
+             <span>Favorito</span>
+         </a>
+     </li>
+
+     <li class="nav-item">
+         <a class="nav-link" href="{{ route('playlist.listar') }}">
+             <ion-icon name="musical-note-outline" style="color: greenyellow;"></ion-icon>
+             <span>Playlist</span>
+         </a>
+     </li>
+     <li class="nav-item">
+         <a class="nav-link" href="{{ route('categoria.listar') }}">
              <ion-icon name="heart-half-outline" style="color: seagreen;"></ion-icon>
              <span>Categoria</span>
          </a>
      </li>
      <li class="nav-item">
-         <a class="nav-link" href="{{route('raiz')}}">
+         <a class="nav-link" href="{{ route('raiz') }}">
              <ion-icon name="person-outline"></ion-icon>
              <span>Usuario</span>
          </a>
      </li>
      <li class="nav-item">
-         <a class="nav-link" href="{{route('raiz')}}">
+         <a class="nav-link" href="{{ route('raiz') }}">
              <ion-icon name="stats-chart-outline" style="color: yellow;"></ion-icon>
              <span>Charts</span>
          </a>
      </li>
+     <!-- End Administrador -->
 
 
-     <!-- Divider -->
-     <hr class="sidebar-divider d-none d-md-block">
 
      <!-- Sidebar Toggler (Sidebar) -->
      <div class="text-center d-none d-md-inline">

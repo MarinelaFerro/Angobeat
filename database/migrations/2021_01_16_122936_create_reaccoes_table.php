@@ -15,8 +15,8 @@ class CreateReaccoesTable extends Migration
     {
         Schema::create('reaccoes', function (Blueprint $table) {
             $table->id();
-            $table->integer('it_gosto');
-            $table->integer('it_nao_gosto');
+            $table->integer('it_gosto_reaccao');
+            $table->integer('it_nao_gosto_reaccao');
             $table->timestamps();
         });
     }

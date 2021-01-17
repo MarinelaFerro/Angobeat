@@ -45,28 +45,28 @@
                         <div class="post-wrapper">
                             @foreach ($musicas as $musica)
                                 <div class="post">
-                                    <img src="/{{ $musica->vc_imagem }}" alt="{{ $musica->vc_titulo }}" class="img-music">
+                                    <img src="/{{ $musica->vc_imagem_musica }}" alt="{{ $musica->vc_titulo_musica }}" class="img-music">
                                     <div class="btn-play">
-                                        <a href="{{ route('/') }}">
+                                        <a href="{{ route('raiz') }}">
                                             <ion-icon name="caret-forward-outline"></ion-icon>
                                         </a>
                                     </div>
                                     <div class="music-overlay">
                                         <div class="controlls-music">
-                                            <a href="{{ route('/') }}">
+                                            <a href="{{ route('raiz') }}">
                                                 <ion-icon name="heart-outline"></ion-icon>
                                             </a>
                                         </div>
 
                                         <div class="controlls-music">
-                                            <a href="{{ route('/') }}">
+                                            <a href="{{ route('raiz') }}">
                                                 <ion-icon name="chatbox-outline"></ion-icon>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="inf">
                                         <a href="#">{{ $musica->vc_titulo }}</a>
-                                        <p>por Marinela ferro</p>
+                                        <p>{{ $vc_nome_artista}}</p>
                                     </div>
                                 </div>
                             @endforeach

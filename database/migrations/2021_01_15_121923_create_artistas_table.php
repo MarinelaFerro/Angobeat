@@ -15,10 +15,10 @@ class CreateArtistasTable extends Migration
     {
         Schema::create('artistas', function (Blueprint $table) {
             $table->id();
-            $table->string('vc_nome', 255);
-            $table->longText('vc_descricao', 255);
-            $table->string('vc_produtora', 255);
-            $table->string('vc_imagem', 255);
+            $table->string('vc_nome_artista', 255);
+            $table->longText('vc_descricao_artista', 255);
+            $table->string('vc_produtora_artista', 255);
+            $table->string('vc_imagem_artista', 255);
             $table->timestamps();
         });
     }

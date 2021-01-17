@@ -17,6 +17,12 @@ class CreateSeguidoresTable extends Migration
             $table->id();
             $table->integer('it_seguidores');
             $table->integer('it_siguindo');
+
+            $table->unsignedBigInteger('it_idUtilizador_seguidor');
+            $table->foreign('it_idUtilizador_seguidor')->references('id')->on('utilizadores');
+
+            $table->unsignedBigInteger('it_idArtista_seguidor');
+            $table->foreign('it_idArtista_seguidor')->references('id')->on('artistas');
             $table->timestamps();
         });
     }

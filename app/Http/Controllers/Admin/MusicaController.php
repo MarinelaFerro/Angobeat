@@ -3,6 +3,9 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Album;
+use App\Models\Artista;
+use App\Models\Categoria;
 use App\Models\Musica;
 use Illuminate\Http\Request;
 
@@ -13,7 +16,10 @@ class MusicaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function __construct()
+    {
+    }
+    public function index(Musica $musicas)
     {
         //
         $response['musicas'] = Musica::orderby('vc_titulo', 'asc')->get();
@@ -21,15 +27,27 @@ class MusicaController extends Controller
         $response['titulo'] = "Musicas";
         return view('utilizador.musicas.site.index', $response);
     }
+    public function listar(Musica $musicas)
+    {
+        //
+
+        $response['musicas'] = $musicas->allmusic()->get();
+        $response['titulo'] = "Lista de Musicas";
+        return view('utilizador.musicas.listar.index', $response);
+    }
 
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function cadastrar()
     {
-        //
+        $response['categorias'] = Categoria::orderby('vc_nome', 'asc')->get();
+        $response['albuns'] = Album::orderby('vc_nome', 'asc')->get();
+        $response['artistas'] = Artista::orderby('vc_nome', 'asc')->get();
+        $response['titulo'] = "Cadastrar Musica";
+        return view('utilizador.musicas.cadastrar.index', $response);
     }
 
     /**
@@ -41,6 +59,18 @@ class MusicaController extends Controller
     public function store(Request $request)
     {
         //
+        $dados = $request->all();
+        if ($request->hasFile('vc_imagem')) {
+            $imagem = $request->file('vc_imagem');
+            $num = rand(1111, 9999);
+            $dir = "uploads/imagens/musicas";
+            $extensao = $imagem->guessClientExtension();
+            $nomeImagem =  $num . "." . $extensao;
+            $imagem->move($dir, $nomeImagem);
+            $dados['vc_imagem'] = $dir . "/" . $nomeImagem;
+        }
+        Musica::create($dados);
+        return redirect()->route('musica.listar');
     }
 
     /**

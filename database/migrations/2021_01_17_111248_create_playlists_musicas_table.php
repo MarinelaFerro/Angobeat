@@ -15,10 +15,10 @@ class CreatePlaylistsMusicasTable extends Migration
     {
         Schema::create('playlists_musicas', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('it_idMusica');
-            $table->unsignedBigInteger('it_idPlaylist');
-            $table->foreign('it_idMusica')->references('id')->on('musicas')->onDelete('cascade');
-            $table->foreign('it_idPlaylist')->references('id')->on('playlists')->onDelete('cascade');
+            $table->unsignedBigInteger('it_idMusica_playlist_musica');
+            $table->unsignedBigInteger('it_idPlaylist_playlist_musica');
+            $table->foreign('it_idMusica_playlist_musica')->references('id')->on('musicas')->onDelete('cascade');
+            $table->foreign('it_idPlaylist_playlist_musica')->references('id')->on('playlists')->onDelete('cascade');
             $table->timestamps();
         });
     }

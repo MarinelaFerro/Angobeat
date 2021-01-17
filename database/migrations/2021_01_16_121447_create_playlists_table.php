@@ -15,9 +15,9 @@ class CreatePlaylistsTable extends Migration
     {
         Schema::create('playlists', function (Blueprint $table) {
             $table->id();
-            $table->string('vc_nome', 100);
-            $table->string('vc_imagem', 255);
-            $table->integer('vc_estado', );
+            $table->string('vc_nome_playlist', 100);
+            $table->string('vc_imagem_playlist', 255);
+            $table->integer('vc_estado_playlist', );
             $table->timestamps();
         });
     }
