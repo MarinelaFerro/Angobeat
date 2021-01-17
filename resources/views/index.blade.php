@@ -45,7 +45,8 @@
                         <div class="post-wrapper">
                             @foreach ($musicas as $musica)
                                 <div class="post">
-                                    <img src="/{{ $musica->vc_imagem_musica }}" alt="{{ $musica->vc_titulo_musica }}" class="img-music">
+                                    <img src="/{{ $musica->vc_imagem_musica }}" alt="{{ $musica->vc_titulo_musica }}"
+                                        class="img-music">
                                     <div class="btn-play">
                                         <a href="{{ route('raiz') }}">
                                             <ion-icon name="caret-forward-outline"></ion-icon>
@@ -66,7 +67,7 @@
                                     </div>
                                     <div class="inf">
                                         <a href="#">{{ $musica->vc_titulo }}</a>
-                                        <p>{{ $vc_nome_artista}}</p>
+                                        <p>{{ $vc_nome_artista }}</p>
                                     </div>
                                 </div>
                             @endforeach
@@ -92,7 +93,7 @@
 
                                 <div class="slide-cate card{{ $n++ }}">
                                     <a href="">
-                                        <h3>{{ $categoria->vc_nome }}</h3>
+                                        <h3>{{ $categoria->vc_nome_categoria }}</h3>
                                     </a>
                                 </div>
 
@@ -133,15 +134,15 @@
                                         </a>
 
                                     </div>
-                                    <img src="/{{ $album->vc_imagem }}" class="img-alb">
+                                    <img src="/{{ $album->vc_imagem_album }}" class="img-alb">
                                     <div class="btn-play">
                                         <a href="http://">
                                             <ion-icon name="caret-forward-outline"></ion-icon>
                                         </a>
                                     </div>
                                     <div class="info">
-                                        <h6><a href="http://">{{ $album->vc_nome }}</a></h6>
-                                        <span>por Preto show</span>
+                                        <h6><a href="http://">{{ $album->vc_nome_album }}</a></h6>
+                                        <span>{{ $album->vc_nome_artista }}</span>
                                     </div>
                                 </div>
                             @endforeach
@@ -163,33 +164,32 @@
                         <ion-icon name="chevron-back-outline" class=" previous icon"></ion-icon>
                         <ion-icon name="chevron-forward-outline" class=" nexting icon"></ion-icon>
                         <div class="artist-post">
-
-                            <!---slide 5-->
-                            <div class="box">
-                                <div class="img-slide">
-                                    <img src="/img/imagens/corp3.jpg" class="img-artist">
-                                    <div class="overlay">
-                                        <div class="artist-overlay">
-                                            <a href="">
-                                                <ion-icon name="caret-forward-outline"></ion-icon>
-                                            </a>
+                            @foreach ($artistas as $artista)
+                                <!---slide {{ $artista->vc_nome_artista }}-->
+                                <div class="box">
+                                    <div class="img-slide">
+                                        <img src="/{{ $artista->vc_imagem_artista }}" class="img-artist">
+                                        <div class="overlay">
+                                            <div class="artist-overlay">
+                                                <a href="">
+                                                    <ion-icon name="caret-forward-outline"></ion-icon>
+                                                </a>
+                                            </div>
+                                            <div class="artist-overlay">
+                                                <a href="">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                            </div>
                                         </div>
-                                        <div class="artist-overlay">
-                                            <a href="">
-                                                <ion-icon name="heart-outline"></ion-icon>
-                                            </a>
+                                        <div class="info">
+                                            <h6><a href="">{{ $artista->vc_nome_artista }}</a></h6>
+                                            <span>12.000 seguidores</span>
                                         </div>
-                                    </div>
-                                    <div class="info">
-                                        <h6><a href="">Nome do artista</a></h6>
-                                        <span>12.000 seguidores</span>
-                                    </div>
 
+                                    </div>
                                 </div>
-                            </div>
-                            <!---fim slide 5-->
-
-
+                                <!---fim slide {{ $artista->vc_nome_artista }}-->
+                            @endforeach
                         </div>
                     </div>
                 </div>

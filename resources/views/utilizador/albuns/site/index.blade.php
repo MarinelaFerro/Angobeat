@@ -8,7 +8,7 @@
     <div class="shadow-lg p-5 mb-5 bg-white rounded container-wrapper">
         @foreach ($albuns as $album)
             <div class="box-album col-md-3">
-                <img src="{{ $album->vc_imagem }}" class="img-album">
+                <img src="/{{ $album->vc_imagem_album }}" class="img-album">
                 <div class="overlay-btn">
                     <a href="">
                         <ion-icon name="heart-outline"></ion-icon>
@@ -20,8 +20,8 @@
                     </a>
                 </div>
                 <div class="info-album">
-                    <h6><a href="">{{ $album->vc_nome }}</a></h6>
-                    <span>por Marinela Ferro</span>
+                    <h6><a href="">{{ $album->vc_nome_album }}</a></h6>
+                    <span>{{$album->vc_nome_artista}}</span>
                 </div>
 
             </div>
@@ -31,4 +31,8 @@
 
 
 
+@endsection
+
+@section('css')
+        <link rel="stylesheet" href="/css/album.css">
 @endsection

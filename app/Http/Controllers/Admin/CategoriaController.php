@@ -16,7 +16,7 @@ class CategoriaController extends Controller
     public function index()
     {
         //
-        $response['categorias'] = Categoria::orderby('vc_nome', 'asc')->get();
+        $response['categorias'] = Categoria::orderby('vc_nome_categoria', 'asc')->get();
         $response['n'] = 1;
         $response['titulo'] = "Categorias";
         return view('utilizador.categorias.site.index', $response);

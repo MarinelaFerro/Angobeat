@@ -16,7 +16,7 @@ class ArtistaController extends Controller
     public function index()
     {
         //
-        $response['artistas'] = Artista::orderby('vc_nome', 'asc')->get();
+        $response['artistas'] = Artista::orderby('vc_nome_artista', 'asc')->get();
         $response['n'] = 1;
         $response['titulo'] = "Artistas";
         return view('utilizador.artistas.site.index', $response);

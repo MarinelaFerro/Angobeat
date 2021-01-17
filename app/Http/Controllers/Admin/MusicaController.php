@@ -22,7 +22,7 @@ class MusicaController extends Controller
     public function index(Musica $musicas)
     {
         //
-        $response['musicas'] = Musica::orderby('vc_titulo', 'asc')->get();
+        $response['musicas'] = Musica::orderby('vc_titulo_musica', 'asc')->get();
         $response['n'] = 1;
         $response['titulo'] = "Musicas";
         return view('utilizador.musicas.site.index', $response);

@@ -10,10 +10,10 @@
 
         @foreach ($categorias as $item)
 
-            <div class="card{{ $n++ }} card ">
+            <div class="card{{ $n++ }} card">
                 <div class="card_image"></div>
                 <div class="card_title title-white">
-                    <p>{{ $item->vc_nome }}</p>
+                    <p>{{ $item->vc_nome_categoria }}</p>
                 </div>
             </div>
             @if ($n == 6)
@@ -25,4 +25,7 @@
     </div>
     <!-- End of shadow -->
 
+@endsection
+@section('css')
+   <link rel="stylesheet" href="/css/categoria.css">
 @endsection

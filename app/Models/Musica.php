@@ -10,13 +10,13 @@ class Musica extends Model
 {
     use HasFactory;
     protected $table = 'musicas';
-    protected $fillable = ['vc_titulo', 'vc_descricao', 'tm_duracao', 'vc_imagem', 'vc_url', 'it_idCategoria', 'it_idAlbum', 'it_idArtista'];
+    protected $fillable = ['vc_titulo_musica', 'vc_descricao_musica', 'tm_duracao_musica', 'vc_imagem_musica', 'vc_url_musica', 'it_idCategoria_musica', 'it_idAlbum_musica', 'it_idArtista_musica'];
 
     public  function homemusic()
     {
         $musicas = DB::table('musicas')
             //->join('albuns', 'musicas.it_idAlbum', '=', 'albuns.id')
-            ->join('artistas', 'musicas.it_idArtista', '=', 'artistas.id')
+            ->join('artistas', 'musicas.it_idArtista_musica', '=', 'artistas.id')
             //->join('categorias', 'musicas.it_idCategoria', '=', 'categorias.id')
             ->select(
                 'musicas.*',

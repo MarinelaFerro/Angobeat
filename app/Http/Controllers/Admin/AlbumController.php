@@ -13,10 +13,10 @@ class AlbumController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Album $albuns)
     {
         //
-        $response['albuns'] = Album::orderby('vc_nome', 'asc')->get();
+        $response['albuns'] = $albuns->homealbum()->orderby('vc_nome_album', 'asc')->get();
         $response['titulo'] = "Álbuns";
         return view('utilizador.albuns.site.index', $response);
     }

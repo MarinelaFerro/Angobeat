@@ -23,14 +23,17 @@
                 </div>
 
                 <div class="img-box">
-                    <img src="/{{$artista->vc_imagem}}" class="img-area">
+                    <img src="/{{$artista->vc_imagem_artista}}" class="img-area">
                 </div>
                 <div class="info-box">
-                    <h6><a href="#">{{$artista->vc_nome}}</a></h6>
+                    <h6><a href="#">{{$artista->vc_nome_artista}}</a></h6>
                     <span>123.999 seguidores</span>
                 </div>
             </div>
         @endforeach
     </div>
 
+@endsection
+@section('css')
+    <link rel="stylesheet" href="/css/artista.css">
 @endsection

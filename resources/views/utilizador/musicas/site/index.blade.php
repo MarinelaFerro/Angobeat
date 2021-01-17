@@ -8,7 +8,7 @@
     <div class=" shadow-lg p-5 mb-5 bg-white rounded  container-wrapper">
         @foreach ($musicas as $musica)
             <div class="box-music">
-                <img src="{{ $musica->vc_imagem }}" alt="">
+                <img src="/{{ $musica->vc_imagem_musica }}" alt="">
                 <div class="btn-overlay">
                     <div class="icon">
                         <a href="">
@@ -23,7 +23,7 @@
                 </div>
                 <div class="info">
                     <h5><a href="">por Marinela ft(Jessica)</a></h5>
-                    <span>{{ $musica->vc_titulo }}</span>
+                    <span>{{ $musica->vc_titulo_musica }}</span>
                 </div>
                 <div class="btn-play">
                     <a href="">
