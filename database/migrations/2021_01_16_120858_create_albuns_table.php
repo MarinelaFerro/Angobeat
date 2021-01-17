@@ -17,8 +17,11 @@ class CreateAlbunsTable extends Migration
             $table->id();
             $table->string('vc_nome', 100);
             $table->string('vc_imagem', 255);
+            $table->unsignedBigInteger('it_idArtista');
             $table->string('vc_descricao', 255);
-            $table->date('dt_data_de_publicacao') ;
+            $table->date('dt_data_de_publicacao');
+            
+            $table->foreign('it_idArtista')->references('id')->on('artistas');
             $table->timestamps();
         });
     }

@@ -19,7 +19,11 @@ class CreateMusicasTable extends Migration
             $table->string('vc_descricao', 255);
             $table->string('vc_imagem', 255);
             $table->string('vc_url', 255);
+            $table->unsignedBigInteger('it_idCategoria');
+            $table->unsignedBigInteger('it_idAlbum');
             $table->time('tm_duracao', $precision = 0);
+            $table->foreign('it_idCategoria')->references('id')->on('categorias')->onDelete('cascade');
+            $table->foreign('it_idAlbum')->references('id')->on('albuns')->onDelete('cascade');
             $table->timestamps();
         });
     }

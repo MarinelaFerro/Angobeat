@@ -34,3 +34,5 @@ Route::get('/artistas/todas', ['as' => 'artista.todas', 'uses' => 'Admin\Artista
 Route::get('/login', ['as' => 'auth.login', 'uses' => 'Auth\LoginController@index']);
 Route::get('/register', ['as' => 'auth.register', 'uses' => 'Auth\RegisterController@index']);
 Route::get('/forgotPassword', ['as' => 'auth.forgotPassword', 'uses' => 'Auth\ForgotPasswordController@index']);
+
+Route::get('/teste', ['as' => 'auth.teste', 'uses' => 'Auth\LoginController@teste']);

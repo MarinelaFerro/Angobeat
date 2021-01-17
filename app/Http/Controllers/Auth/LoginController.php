@@ -13,4 +13,8 @@ class LoginController extends Controller
     {
         return view('auth.login');
     }
+    public function teste()
+    {
+        return view('admin.tablecategoria');
+    }
 }
