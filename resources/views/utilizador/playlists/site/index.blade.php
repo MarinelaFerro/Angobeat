@@ -31,3 +31,7 @@
 
     </div>
 @endsection
+@section('css')
+
+    <link rel="stylesheet" href="css/playlist.css">
+@endsection

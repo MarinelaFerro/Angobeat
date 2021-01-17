@@ -12,9 +12,9 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     //
-    public function index(Album $albuns)
+    public function index(Album $albuns, Musica $musicas)
     {
-        $response['musicas'] = Musica::all();
+        $response['musicas'] = $musicas->homemusic()->orderby('vc_titulo_musica', 'asc')->limit(10)->get();
         $response['categorias'] = Categoria::orderby('id', 'desc')->limit(5)->get();
         $response['albuns'] = $albuns->homealbum()->orderby('vc_nome_album', 'asc')->limit(5)->get();
         $response['artistas'] = Artista::all();

@@ -20,22 +20,12 @@
 
     <!-- Custom styles for this template-->
     <link href="/css/sb-admin-2.min.css" rel="stylesheet">
-    {{--
-    <link rel="stylesheet" href="/css/musica.css">
-
-    <link rel="stylesheet" href="/css/categoria.css">
-  
-    <link rel="stylesheet" href="css/playlist.css"> --}}
-
+    
     <!-- Custom styles for this page -->
     <link href="/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
     @yield('css')
-    {{--
-    <link rel="stylesheet" href="css/formaddmusic.css">
-
-
-    --}}
+  
 
 </head>
 

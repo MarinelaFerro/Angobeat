@@ -29,3 +29,6 @@
 
 
 @endsection
+@section('css')
+     <link rel="stylesheet" href="/css/formaddmusic.css">
+@endsection

@@ -7,7 +7,7 @@
     </div>
     <div class=" shadow-lg p-5 mb-5 bg-white rounded  container-wrapper">
         @foreach ($musicas as $musica)
-            <div class="box-music">
+            <div class="box-music col-md-3">
                 <img src="/{{ $musica->vc_imagem_musica }}" alt="">
                 <div class="btn-overlay">
                     <div class="icon">
@@ -35,4 +35,7 @@
         @endforeach
     </div>
 
+@endsection
+@section('css')
+      <link rel="stylesheet" href="/css/musica.css">
 @endsection

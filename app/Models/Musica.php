@@ -26,4 +26,19 @@ class Musica extends Model
 
         return $musicas;
     }
+    public  function allmusic()
+    {
+        $musicas = DB::table('musicas')
+        //->join('albuns', 'musicas.it_idAlbum', '=', 'albuns.id')
+        ->join('artistas', 'musicas.it_idArtista_musica', '=', 'artistas.id')
+        //->join('categorias', 'musicas.it_idCategoria', '=', 'categorias.id')
+        ->select(
+            'musicas.*',
+            //'categorias.vc_nome',
+            //'albuns.vc_nome',
+            'artistas.vc_nome_artista'
+        );
+
+        return $musicas;
+    }
 }

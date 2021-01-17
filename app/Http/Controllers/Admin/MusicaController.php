@@ -43,9 +43,9 @@ class MusicaController extends Controller
      */
     public function cadastrar()
     {
-        $response['categorias'] = Categoria::orderby('vc_nome', 'asc')->get();
-        $response['albuns'] = Album::orderby('vc_nome', 'asc')->get();
-        $response['artistas'] = Artista::orderby('vc_nome', 'asc')->get();
+        $response['categorias'] = Categoria::orderby('vc_nome_categoria', 'asc')->get();
+        $response['albuns'] = Album::orderby('vc_nome_album', 'asc')->get();
+        $response['artistas'] = Artista::orderby('vc_nome_artista', 'asc')->get();
         $response['titulo'] = "Cadastrar Musica";
         return view('utilizador.musicas.cadastrar.index', $response);
     }

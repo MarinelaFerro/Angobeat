@@ -45,8 +45,7 @@
                         <div class="post-wrapper">
                             @foreach ($musicas as $musica)
                                 <div class="post">
-                                    <img src="/{{ $musica->vc_imagem_musica }}" alt="{{ $musica->vc_titulo_musica }}"
-                                        class="img-music">
+                                    <img src="/{{ $musica->vc_imagem_musica }}" class="img-music">
                                     <div class="btn-play">
                                         <a href="{{ route('raiz') }}">
                                             <ion-icon name="caret-forward-outline"></ion-icon>
@@ -66,8 +65,8 @@
                                         </div>
                                     </div>
                                     <div class="inf">
-                                        <a href="#">{{ $musica->vc_titulo }}</a>
-                                        <p>{{ $vc_nome_artista }}</p>
+                                        <a href="#">{{ $musica->vc_titulo_musica }}</a>
+                                        <p>{{ $musica->vc_nome_artista }}</p>
                                     </div>
                                 </div>
                             @endforeach
@@ -207,9 +206,9 @@
                         <ion-icon name="chevron-forward-outline" class="nexte icon"></ion-icon>
                         <div class="post-alt">
                             @foreach ($musicas as $musica)
-                                <!---slide 5-->
+                             
                                 <div class="item-sliderAlt">
-                                    <img src="{{ $musica->vc_imagem }}" class="img-alta">
+                                    <img src="/{{ $musica->vc_imagem_musica }}" class="img-alta">
                                     <div class="overlay-alta">
                                         <div class="alt-overlay">
                                             <a href="">
@@ -234,8 +233,8 @@
                                         </a>
                                     </div>
                                     <div class="info">
-                                        <h6><a href="">{{ $musica->vc_titulo }}</a></h6>
-                                        <span>por Marinela Ferro</span>
+                                        <h6><a href="">{{ $musica->vc_titulo_musica }}</a></h6>
+                                        <span>{{ $musica->vc_nome_artista }}</span>
                                     </div>
                                 </div>
                             @endforeach
@@ -280,8 +279,8 @@
                                         </a>
                                     </div>
                                     <div class="info">
-                                        <h6><a href="#" {{ $playlist->vc_nome }}</a></h6>
-                                        <span>por Preto show</span>
+                                        <h6><a href="#">{{ $playlist->vc_nome }}</a></h6>
+                                        <span>{por Preto show}</span>
                                     </div>
                                 </div>
                             @endforeach
